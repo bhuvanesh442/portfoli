@@ -1,0 +1,98 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  
+  .nav-title {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .nav-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  /* Sliding Menu */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    width: 200px;
+    height: 100vh;
+    background-color: #444;
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
+    
+  }
+  
+  .nav-menu.open {
+    left: 0; /* Slide in */
+  }
+  
+  .nav-menu.closed {
+    left: -250px; /* Slide out */
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+  .contact{
+    text-align: center;
+  }
+
+  .projects{
+    text-align: center;
+  }
+
+  .home{
+    text-align: center;
+  }
+  .about{
+    text-align: center;
+  }
+  .about.open{
+    text-align:end;
+  }
+
+
+  
