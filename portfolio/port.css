@@ -74,6 +74,13 @@ body {
   padding-top: 30px;
 }
 
+.nav-menu ul li :hover{
+ text-decoration: underline;
+ text-decoration-color: aqua;
+ transform: scaleX(1.2) translateX(-50%);
+ transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+}
+
 .nav-menu ul li a {
   text-decoration: none;
   color: white;
@@ -95,4 +102,26 @@ body {
 .home, .about, .projects, .contact {
   padding: 20px;
   text-align: center;
+}
+
+.nav-contact-btn{
+  height: 32px;
+  background-color: #333;
+  border: 1px rgb(70, 117, 153) solid;
+  font-size: x-large;
+  text-decoration: none;
+  border-radius: 3px;
+  color: #f4f4f4
+}
+
+.nav-contact-btn:hover{
+  background-color: rgb(70, 117, 153);
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4
+}
+.nav-contact-h3{
+  margin: 0%;
 }
