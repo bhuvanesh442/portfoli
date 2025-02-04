@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import {HashRouter as Router,   Routes, Route } from "react-router-dom";
 import Home from "./home";
+import "./home.css";
 
 export default function App() {
   return (

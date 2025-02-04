@@ -1,0 +1,46 @@
+.home-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.home-title {
+    color: #333;
+}
+
+.home-description {
+    color: #555;
+    font-size: 18px;
+}
+
+.home-skills {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f0f0;
+    border-radius: 8px;
+}
+
+.home-skills-title {
+    color: #333;
+    font-size: 20px;
+}
+
+.home-skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.home-skills-list li {
+    background: #ddd;
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
