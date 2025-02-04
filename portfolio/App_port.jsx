@@ -5,24 +5,21 @@ import Hero from "./Hero";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import { HashRouter  , Routes, Route } from "react-router-dom";
+import {HashRouter as Router,   Routes, Route } from "react-router-dom";
 import Home from "./home";
 
-const Portfolio = () => {
+export default function App() {
   return (
-    <div>
-      {/* <Navbar /> */}
+    <Router>
       <Navbar />
-      <HashRouter  >
-          <Routes>
-            <Route path="/home" element={<Home/>} />
-            <Route path="/about" element={<About />} />
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/Projects" element={<Projects />} />
-          </Routes>
-      </HashRouter>
-    </div>
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
-};
-
-export default Portfolio;
+}

@@ -1,98 +1,98 @@
-/* General styles */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  /* Navbar */
-  .navbar {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-  
-  .nav-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-  }
-  
-  .nav-title {
-    margin: 0;
-    font-size: 1.5em;
-  }
-  
-  .nav-toggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2em;
-    cursor: pointer;
-    z-index: 100;
-  }
-  
-  /* Sliding Menu */
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    left: -250px; /* Initially hidden */
-    width: 200px;
-    height: 100vh;
-    background-color: #444;
-    padding-top: 60px;
-    transition: left 0.3s ease-in-out;
-    
-  }
-  
-  .nav-menu.open {
-    left: 0; /* Slide in */
-  }
-  
-  .nav-menu.closed {
-    left: -250px; /* Slide out */
-  }
-  
-  .nav-menu ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .nav-menu li {
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .nav-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-  .contact{
-    text-align: center;
-  }
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  flex-direction: row-reverse;
+}
 
-  .projects{
-    text-align: center;
-  }
+.nav-title {
+  margin: 0;
+  margin-right: 5%;
+  font-size: 1.5em;
+}
 
-  .home{
-    text-align: center;
-  }
-  .about{
-    text-align: center;
-  }
-  .about.open{
-    text-align:end;
-  }
+.nav-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
 
 
-  
+
+/* Sidebar Menu */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden initially */
+  width: 200px;
+  height: 100vh;
+  background-color: #444;
+  padding-top: 60px;
+  transition: left 0.3s ease-in-out;
+}
+
+.li :first-child {
+  padding-top: 30px;
+}
+
+
+.nav-menu.open {
+  left: 0; /* Slide in */
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu ul li {
+  padding: 15px;
+  border-bottom: 1px solid #555;
+}
+
+.nav-menu ul li:first-child{
+  padding-top: 30px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+/* Content Area */
+.content {
+  margin-top: 60px;
+  padding: 20px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.nav-menu.open + .content {
+  margin-left: 250px;
+}
+
+/* Page Sections */
+.home, .about, .projects, .contact {
+  padding: 20px;
+  text-align: center;
+}
