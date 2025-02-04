@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  flex-direction: row-reverse;
+}
+
+.nav-title {
+  margin: 0;
+  margin-right: 5%;
+  font-size: 1.5em;
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+
+
+/* Sidebar Menu */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden initially */
+  width: 200px;
+  height: 100vh;
+  background-color: #444;
+  padding-top: 60px;
+  transition: left 0.3s ease-in-out;
+}
+
+.li :first-child {
+  padding-top: 30px;
+}
+
+
+.nav-menu.open {
+  left: 0; /* Slide in */
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu ul li {
+  padding: 15px;
+  border-bottom: 1px solid #555;
+}
+
+.nav-menu ul li:first-child{
+  padding-top: 30px;
+}
+
+.nav-menu ul li :hover{
+ text-decoration: underline;
+ text-decoration-color: aqua;
+ transform: scaleX(1.2) translateX(-50%);
+ transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+/* Content Area */
+.content {
+  margin-top: 60px;
+  padding: 20px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.nav-menu.open + .content {
+  margin-left: 250px;
+}
+
+/* Page Sections */
+.home, .about, .projects, .contact {
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-contact-btn{
+  height: 32px;
+  background-color: #333;
+  border: 1px rgb(70, 117, 153) solid;
+  font-size: x-large;
+  text-decoration: none;
+  border-radius: 3px;
+  color: #f4f4f4
+}
+
+.nav-contact-btn:hover{
+  background-color: rgb(70, 117, 153);
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4
+}
