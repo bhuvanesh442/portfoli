@@ -6,15 +6,31 @@
     width: 60%;
     text-align: center;
     margin: 20px auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.home-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .home-title {
     color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.home-title:hover {
+    color: rgb(70, 117, 153);
 }
 
 .home-description {
     color: #555;
     font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.home-description:hover {
+    color: #222;
 }
 
 .home-skills {
@@ -22,11 +38,21 @@
     padding: 15px;
     background: #f0f0f0;
     border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.home-skills:hover {
+    background: #e0e0e0;
 }
 
 .home-skills-title {
     color: #333;
     font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.home-skills-title:hover {
+    color: rgb(70, 117, 153);
 }
 
 .home-skills-list {
@@ -43,4 +69,11 @@
     font-size: 16px;
     font-weight: bold;
     color: #333;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.home-skills-list li:hover {
+    background: rgb(70, 117, 153);
+    color: white;
+    transform: scale(1.1);
 }

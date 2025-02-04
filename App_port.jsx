@@ -8,6 +8,9 @@ import Contact from "./Contact";
 import {HashRouter as Router,   Routes, Route } from "react-router-dom";
 import Home from "./home";
 import "./home.css";
+import "./about.css";
+import "./project.css";
+import "./contact.css";
 
 export default function App() {
   return (

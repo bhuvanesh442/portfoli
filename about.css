@@ -1,0 +1,33 @@
+.home-about {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    transition: background 0.3s ease-in-out;
+}
+
+.home-about:hover {
+    background: #ececec;
+}
+
+.home-about-title {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.home-about-title:hover {
+    color: rgb(70, 117, 153);
+}
+
+.home-about-description {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    transition: color 0.3s ease-in-out;
+}
+
+.home-about-description:hover {
+    color: #222;
+}

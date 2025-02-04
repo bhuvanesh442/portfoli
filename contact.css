@@ -1,0 +1,47 @@
+.home-contact {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    transition: background 0.3s ease-in-out;
+}
+
+.home-contact:hover {
+    background: #ececec;
+}
+
+.home-contact-title {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.home-contact-title:hover {
+    color: rgb(70, 117, 153);
+}
+
+.home-contact-description {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.home-contact-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-icon {
+    font-size: 28px;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+    color: rgb(70, 117, 153);
+}
